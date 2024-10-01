@@ -62,8 +62,3 @@ sudo rm -rf /etc/kubernetes/manifests/
 echo "Removing existing etcd data directory..."
 sudo rm -rf /var/lib/etcd/
 
-# Initialize the Kubernetes cluster
-echo "Initializing the Kubernetes cluster..."
-sudo kubeadm init --control-plane-endpoint=""
-
-echo "Script execution completed."ip-172-31-35-251"

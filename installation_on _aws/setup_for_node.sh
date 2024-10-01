@@ -59,23 +59,3 @@ apt-get install -y kubelet kubeadm kubectl
 
 # Prevent Kubernetes components from being automatically updated
 apt-mark hold kubelet kubeadm kubectl
-
-# Initialize Kubernetes cluster
-echo "Initializing the Kubernetes cluster..."
-kubeadm init --control-plane-endpoint="" | tee /root/kubeadm-init.log
-
-# Set up kubectl for the root user
-echo "Configuring kubectl for the root user..."
-mkdir -p $HOME/.kube
-cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-chown $(id -u):$(id -g) $HOME/.kube/config
-
-# Optionally deploy Calico networking (uncomment to apply)
-# echo "Deploying Calico networking..."
-# kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml
-# Display networking setup message
-echo "To setup networking, run the following command:"
-echo "kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml"
-
-echo "Script execution completed."
-echo "Kubernetes setup complete."
