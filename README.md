@@ -1,36 +1,28 @@
-# Kubernetes Error Handling
+# Kubernetes Troubleshooting Practice
 
-Shell-based Kubernetes troubleshooting and error-handling practice.
+Shell-based Kubernetes troubleshooting and preflight error-handling practice.
 
-## Overview
+## Purpose
 
-This is a DevOps and infrastructure practice repository. It is part of my broader GitHub portfolio showing hands-on work across AI, web development, automation, and software engineering fundamentals.
+Kubernetes setup often fails because of environment, node, or preflight issues. This repo focuses on collecting and practicing fixes for those errors so deployments are easier to debug.
 
-## What It Demonstrates
+## What This Shows
 
-- Practical implementation and experimentation rather than only theory.
-- Familiarity with the repository's core stack and development workflow.
-- Iterative learning through small projects, exercises, or prototypes.
+- Preflight error handling
+- Shell-based troubleshooting
+- Kubernetes installation/support workflows
 
-## Tech Stack
+## Stack
 
-- Primary language: Shell
-- Topics: kubernetes, shell, troubleshooting
-
-## Repository Structure
-
-- Top-level folders: 01_kubernetes_preflight_errors_for_nodes, 1_preflight_error_for_controlPlane, installation_on _aws, kubernetes-auto-completion
-- Top-level files: No top-level files detected.
-
-## Status
-
-This is a learning/prototype repository kept public to show practice, experimentation, and growth.
+- Shell
+- Kubernetes
+- Linux
 
 ## Next Improvements
 
-- Add screenshots, sample outputs, or a short demo where relevant.
-- Expand setup instructions for local development.
-- Document the main learning outcome, architecture, and edge cases.
+- Add error -> cause -> fix tables
+- Add commands with expected output
+- Separate AWS/local examples
 
 ## Author
 
